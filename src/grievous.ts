@@ -1,6 +1,6 @@
-import { load } from '.'
+import { load } from '../api'
 
-export default function (params: { name: string } = { name: 'General Kenobi'}) {
+export default function (params: { name?: string }) {
   return load('grievous.gif')
     .bottomText(params.name ?? 'General Kenobi', 2)
 }

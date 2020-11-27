@@ -1,9 +1,11 @@
 {
   "public": true,
-  "builds": [
-    { "src": "src/index.ts", "use": "@vercel/node", "config": { "maxLambdaSize": "20mb" }}
-  ],
+  "functions": {
+    "api/index.ts": {
+      "includeFiles": "./gifs/*"  
+    }
+  },
   "rewrites": [
-    { "source": "/:name*", "destination": "src/index.ts" }
+    { "source": "/:meme_name*", "destination": "api/index" }
   ]
 }
