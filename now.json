@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "public": false,
+  "alias": "meme.ttp.sh",
+  "builds": [
+    { "src": "src/index.ts", "use": "@now/node", "config": { "maxLambdaSize": "20mb" }}
+  ],
+  "routes": [
+    { "src": ".*", "dest": "src/index.ts" }
+  ]
+}
