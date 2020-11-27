@@ -1,4 +1,4 @@
-import { load } from '../api'
+import { load } from '.'
 
 export default function (params: { name?: string }) {
   return load('grievous.gif')
