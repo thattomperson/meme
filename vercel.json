@@ -2,9 +2,7 @@
   "public": true,
   "functions": {
     "api/index.ts": {
-      "includeFiles": [
-        "./gifs/*|node_modules/@jimp/plugin-print/fonts/open-sans/open-sans-32-white/open-sans-32-white.fnt"
-      ]
+      "includeFiles": "./gifs/*|node_modules/@jimp/plugin-print/fonts/open-sans/open-sans-32-white/open-sans-32-white.fnt"
     }
   },
   "rewrites": [
