@@ -34,7 +34,7 @@ class AsyncMemeGen {
         const width = Jimp.measureText(this.font, text)    
         jimp.print(
           this.font, 
-          (jimp.bitmap.width - width) / 2, jimp.bitmap.height - this.font.info.size,
+          (jimp.bitmap.width - width) / 2, jimp.bitmap.height - (this.font.info.size + 10),
           text,
           jimp.bitmap.width,
           jimp.bitmap.height,

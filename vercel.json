@@ -1,0 +1,9 @@
+{
+  "public": true,
+  "builds": [
+    { "src": "src/index.ts", "use": "@vercel/node", "config": { "maxLambdaSize": "20mb" }}
+  ],
+  "rewrites": [
+    { "source": "/:name*", "destination": "src/index.ts" }
+  ]
+}
