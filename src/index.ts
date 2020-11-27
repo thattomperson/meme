@@ -49,7 +49,7 @@ class AsyncMemeGen {
     const codec = new GifCodec()
     const file = await this.filePromise
 
-    this.font = await Jimp.loadFont(Jimp.FONT_SANS_32_WHITE)
+    this.font = await Jimp.loadFont(join(resolve('assets'), 'open-sans-32-white.fnt'))
 
     let frames = file.frames
 
@@ -70,5 +70,5 @@ class AsyncMemeGen {
 }
 
 export function load(name: string): AsyncMemeGen {
-  return new AsyncMemeGen(resolve(join('./gifs', name)))
+  return new AsyncMemeGen(resolve(join('./assets', name)))
 }
